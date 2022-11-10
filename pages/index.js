@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,60 +13,847 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <div className={styles.heading}>
+          <div>
+            <h2 className={styles.heading1}>Real Time Learning</h2>
+            <h1 className={styles.heading2}>Real Time Experience</h1>
+            <p className={styles.heading3}>Learn Real World Skills From The Leaders Get Head-Hunted By Top Recruiters</p>
+            <ul className={styles.heading4}>
+              <li>30,000+ Careers+ Transformed</li>
+              <li>1,000+ Hiring Partners</li>
+              <li>4.9/ 5 Star Rating</li>
+            </ul>
+            <div className={styles.btn}>
+              <button className={styles.btn1}>Talk to Expert</button>
+              <button className={styles.btn2}>Enquire Know</button>
+            </div>
+          </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className={styles.image}>
+            <Image src='/image.png' width={450} height={450}></Image>
+          </div>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+        <div className={styles.socialmedia}>
+          <div>
+            <Image src='/whatsapp.png' width={40} height={40}></Image>
+          </div>
+          <div>
+            <Image src='/call.png' width={40} height={40}></Image>
+          </div>
+        </div>
+
+
+
+        <div className={styles.baground}>
+          <div className={styles.sliders}>
+            <div className={styles.slider1}>Our Alumnus Work In</div>
+            <div>
+              <ul className={styles.slider2}>
+                <li className={styles.sercices}><Image src='/service.jpg' width={200} height={80}></Image></li>
+                <li className={styles.sercices}><Image src='/service2.jpg' width={200} height={90}></Image></li>
+                <li className={styles.sercices}><Image src='/service3.jpg' width={200} height={90}></Image></li>
+                <li className={styles.sercices}><Image src='/service4.jpg' width={200} height={90}></Image></li>
+                <li className={styles.sercices}><Image src='/service5.jpg' width={200} height={90}></Image></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.arrow}>
+          <div>
+            
+            <Image src='/arrow.png' width={40} height={40}></Image>
+          </div>
+        </div>
+        <div>
+          <div className={styles.program}>
+            <div className={styles.head1}>Post Graduate Programs</div>
+            <div className={styles.head2}>Join the League of Winners. Enroll For Job Guaranteed PG Programs</div>
+            <div className={styles.head3}>
+              <div className={styles.workshop}> Bootcamps & Workshops</div>
+              <div className={styles.learning}> Project Centric Learning</div>
+              <div className={styles.placement}> Bootcamps & Workshops</div>
+            </div>
+          </div>
+
+          <div className={styles.boxes}>
+            <div className={styles.box1}>
+              <Image src='/box1.jpg' width={400} height={221}></Image>
+              <div className={styles.boxitem}>
+                <h2>Post Graduate Programme in Digital Marketing and Analytics </h2>
+                <div>
+                  <p>6 Months</p>
+                  <p>Classroom/Online</p>
+                </div>
+                <ul>
+                  <li>Gauranted Jov</li>
+                  <li>12 Courses in 1 Program </li>
+                  <li>40+ Tools & 15+ Live Projects </li>
+                  <li>21+ Certifications</li>
+                </ul>
+                <h4>Learners Graduated - 2,879</h4>
+              </div>
+            </div>
+            <div className={styles.box1}>
+              <Image src='/box2.jpg' width={400} height={221}></Image>
+              <div className={styles.boxitem}>
+                <h2>Post Graduate Programme in Digital Marketing and Analytics </h2>
+                <div>
+                  <p>6 Months</p>
+                  <p>Classroom/Online</p>
+                </div>
+                <ul>
+                  <li>Gauranted Jov</li>
+                  <li>12 Courses in 1 Program </li>
+                  <li>40+ Tools & 15+ Live Projects </li>
+                  <li>21+ Certifications</li>
+                </ul>
+                <h4>Learners Graduated - 2,879</h4>
+              </div>
+            </div>
+            <div className={styles.box1}>
+              <Image src='/box3.jpg' width={400} height={221}></Image>
+              <div className={styles.boxitem}>
+                <h2>Post Graduate Programme in Digital Marketing and Analytics </h2>
+                <div>
+                  <p>6 Months</p>
+                  <p>Classroom/Online</p>
+                </div>
+                <ul>
+                  <li>Gauranted Jov</li>
+                  <li>12 Courses in 1 Program </li>
+                  <li>40+ Tools & 15+ Live Projects </li>
+                  <li>21+ Certifications</li>
+                </ul>
+                <h4>Learners Graduated - 2,879</h4>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div>
+          <div className={styles.program}>
+            <div className={styles.head1}>Skill Diploma Courses</div>
+            <div className={styles.head2}>Add More Feathers to Your Cap. Upgrade Your Skills to Stay Relevent With Industry Requirements</div>
+            <div className={styles.head3}>
+              <div className={styles.workshop}> 10+ Centers in South India</div>
+              <div className={styles.learning}> DA360 Alumni Status</div>
+              <div className={styles.placement}> Placement Assistance</div>
+            </div>
+          </div>
+
+          <div className={styles.boxes}>
+            <div className={styles.box1}>
+              <Image src='/skill1.jpg' width={400} height={221}></Image>
+              <div className={styles.boxitem}>
+                <h2>Post Graduate Programme in Digital Marketing and Analytics </h2>
+                <div>
+                  <p>6 Months</p>
+                  <p>Classroom/Online</p>
+                </div>
+                <ul>
+                  <li>Gauranted Jov</li>
+                  <li>12 Courses in 1 Program </li>
+                  <li>40+ Tools & 15+ Live Projects </li>
+                  <li>21+ Certifications</li>
+                </ul>
+                <h4>Learners Graduated - 2,879</h4>
+              </div>
+            </div>
+            <div className={styles.box1}>
+              <Image src='/skill2.jpg' width={400} height={221}></Image>
+              <div className={styles.boxitem}>
+                <h2>Post Graduate Programme in Digital Marketing and Analytics </h2>
+                <div>
+                  <p>6 Months</p>
+                  <p>Classroom/Online</p>
+                </div>
+                <ul>
+                  <li>Gauranted Jov</li>
+                  <li>12 Courses in 1 Program </li>
+                  <li>40+ Tools & 15+ Live Projects </li>
+                  <li>21+ Certifications</li>
+                </ul>
+                <h4>Learners Graduated - 2,879</h4>
+              </div>
+            </div>
+            <div className={styles.box1}>
+              <Image src='/skill3.jpg' width={400} height={221}></Image>
+              <div className={styles.boxitem}>
+                <h2>Post Graduate Programme in Digital Marketing and Analytics </h2>
+                <div>
+                  <p>6 Months</p>
+                  <p>Classroom/Online</p>
+                </div>
+                <ul>
+                  <li>Gauranted Jov</li>
+                  <li>12 Courses in 1 Program </li>
+                  <li>40+ Tools & 15+ Live Projects </li>
+                  <li>21+ Certifications</li>
+                </ul>
+                <h4>Learners Graduated - 2,879</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.container2}>
+          <div className={styles.container2head}>
+            <p>How Are We Unique?</p>
+            <h2>How Are We Unique? </h2>
+            <div></div>
+          </div>
+          <div className={styles.mainBox}>
+            <div className={styles.box}>
+              <div className={styles.boxContainer}>
+                <div>
+                  <Image src='/program1.jpg' width={370} height={210}></Image>
+                </div>
+                <div className={styles.card}>
+                  <div>
+                    <h2>Job Guaranteed Program</h2>
+                    <p>Start your learning with our job guaranteed program. We assist you for the placement with packages up to ₹12LPA. </p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.boxContainer}>
+                <div>
+                  <Image src='/program2.jpg' width={370} height={210}></Image>
+                </div>
+                <div className={styles.card}>
+                  <div>
+                    <h2>Global Certifications </h2>
+                    <p>Globally recognized certifications will help in validating and assessing your skill sets that boost your career opportunities. </p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.boxContainer}>
+                <div>
+                  <Image src='/program3.jpg' width={370} height={210}></Image>
+                </div>
+                <div className={styles.card}>
+                  <div>
+                    <h2>Faculties from Industry</h2>
+                    <p>Learn real-world skills & get professional certifications. Acquire knowledge through live sessions delivered by industry experts. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+
+        <div className={styles.container2head}>
+          <p>Career Transitions</p>
+          <h2>30,000+ Alumnus To Connect</h2>
+          <div></div>
+        </div>
+
+        <div className={styles.section}>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile1.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile2.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile3.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile4.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.section}>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile1.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile2.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile3.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile4.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+        </div>
+        <div className={styles.section}>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile1.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile2.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile3.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+          <div className={styles.profile}>
+            <div className={styles.profileItem}>
+              <Image className={styles.img} src='/profile4.jpg' width={120} height={120}></Image>
+              <h3>Vishnu Teja</h3>
+              <p>Research Intern</p>
+              <p>Adwords Strategist</p>
+              <Image src='/service4.jpg' width={100} height={50}></Image>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.highlight}>
+          <div className={styles.highlightContainer}>
+            < h1>PLACEMENT HIGHLIGHTS</h1>
+            <div className={styles.line}></div>
+            <div className={styles.highlightItem}>
+              <div className={styles.highlightContent}>
+                <h2>₹18 LPA</h2>
+                <p>Highest Package</p>
+              </div>
+              <div className={styles.highlightContent}>
+                <h2>90%</h2>
+                <p>Highest Salary Hike</p>
+              </div>
+              <div className={styles.highlightContent}>
+                <h2>58%</h2>
+                <p>Avg. Salary Hike</p>
+              </div>
+              <div className={styles.highlightContent}>
+                <h2>1,000+</h2>
+                <p>Hiring Partners</p>
+              </div>
+              <div className={styles.highlightContent}>
+                <h2>30,000+</h2>
+                <p>Alumni</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.container2head}>
+          <h4>Career Transitions</h4>
+          <h2>30,000+ Alumnus To Connect</h2>
+          <div className={styles.line}></div>
+        </div>
+
+        <div className={styles.container3}>
+          <div className={styles.sliders}>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile3.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile2.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Ganesh Kumar</h3>
+                        <p>Recruitment Ass. Manager</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>We were looking to hire entry-level digital marketers, and Digital Academy 360 more than delivered. All the candidates we interviewed were equally talented, and selecting a few wasn’t easy. The curriculum and practical training that the learners received proved they have complete knowledge of the corporate world. We also found out that they train the learners in soft skills, language enhancement, and communication skills, which is...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.sliders}>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Rajesh</h3>
+                        <p>HR Managar</p>
+                        <Image className={styles.profileLogo} src='/service2.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.container4}>
+          <div className={styles.container2head}>
+            <h4>Learners Speak</h4>
+            <h2>WHY CHOOSE DIGITAL ACADEMY 360 COURSES</h2>
+            <div className={styles.line}></div>
+          </div>
+          <div className={styles.videoSection}>
+            <div className={styles.video1}>
+              <div>
+                <Link href='https://www.youtube.com/watch?v=g6fnFALEseI'>Click Hear</Link>
+              </div>
+            </div>
+            <div className={styles.video1}>
+              <div>
+                <Link href='https://www.youtube.com/watch?v=g6fnFALEseI'>click hear</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.container5}>
+          <div className={styles.containerbox}>
+            <div className={styles.container2head}>
+              <h4>Learners Speak</h4>
+              <h2>WHY CHOOSE DIGITAL ACADEMY 360 COURSES</h2>
+              <div className={styles.line}></div>
+            </div>
+            <div className={styles.containerSliders}>
+              <div className={styles.slidersBar}>
+                <Image src='/service4.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service2.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service3.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service5.jpg' width={170} height={90}></Image>
+              </div>
+            </div>
+            <div className={styles.containerSliders}>
+              <div className={styles.slidersBar}>
+                <Image src='/service3.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service4.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service5.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service2.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service.jpg' width={170} height={90}></Image>
+              </div>
+            </div>
+            <div className={styles.containerSliders}>
+              <div className={styles.slidersBar}>
+                <Image src='/service4.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service2.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service3.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service5.jpg' width={170} height={90}></Image>
+              </div>
+            </div>
+            <div className={styles.containerSliders}>
+              <div className={styles.slidersBar}>
+                <Image src='/service3.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service4.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service5.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service2.jpg' width={170} height={90}></Image>
+              </div>
+              <div className={styles.slidersBar}>
+                <Image src='/service.jpg' width={170} height={90}></Image>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.container2head}>
+          <h4>REVIEWS & RATINGS</h4>
+          <h2>Hear Straight From Our Learners</h2>
+          <div className={styles.line}></div>
+        </div>
+
+
+        <div className={styles.container6}>
+          <div className={styles.container6box}>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.container6box}>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.container6box}>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.slider}>
+              <div className={styles.sliderContent}>
+                <div className={styles.profileData}>
+                  <div className={styles.dataContent}>
+                    <div className={styles.heder}>
+                      <Image className={styles.profileImg} src='/profile1.jpg' width={60} height={60}></Image>
+                      <div>
+                        <h3>Anupama Rajashekar</h3>
+                        <p>Senior Lead HR</p>
+                        <Image className={styles.profileLogo} src='/service4.jpg' width={60} height={40}></Image>
+                      </div>
+                    </div>
+                    <h4>Digital Academy 360 has done a great job of teaching its learners. There is so much talent coming in every year. Their agency-based training has made college and background irrelevant because the learners don’t even feel like freshers. They are already job-ready, talented, and have the the go-getter attitude. Companies can benefit significantly by sourcing digital marketing professionals from Digital Academy 360...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className={styles.container7}>
+          <div className={styles.container2head}>
+            <h1>RECENT BLOG POSTS</h1>
+            <div className={styles.line}></div>
+          </div>
+          <div className={styles.containerboxes}>
+            <div className={styles.box}>
+              <div className={styles.boxContain}>
+                <Image src='/blog1.jpg' width={395} height={170}></Image>
+                <div className={styles.boxInerContain}>
+                  <h5> Category Digital Marketing </h5>
+                  <h3>Top 10 Digital Marketing Influencers in India </h3>
+                  <p>The world has seen an unusual change in 2020. We have seen it all, from.... </p>
+                  <div className={styles.btn3}>
+                    <button>READ MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.boxContain}>
+                <Image src='/blog2.jpg' width={395} height={170}></Image>
+                <div className={styles.boxInerContain}>
+                  <h5> Category Digital Marketing </h5>
+                  <h3>Top 10 Women Digital Marketers In India</h3>
+                  <p>Can you think of any job that a woman cannot do? I guess, NO. As a nation.... </p>
+                  <div className={styles.btn3}>
+                    <button>READ MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.boxContain}>
+                <Image src='/blog3.jpg' width={395} height={170}></Image>
+                <div className={styles.boxInerContain}>
+                  <h5> Category Digital Marketing </h5>
+                  <h3>31 Digital Marketing Tips for Startups to Succeed  </h3>
+                  <p>Nothing is more exciting in life than starting your own Business/ Company.... </p>
+                  <div className={styles.btn3}>
+                    <button>READ MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </main >
+
+
+    </div >
   )
 }
